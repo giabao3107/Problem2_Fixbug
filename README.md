@@ -8,7 +8,7 @@ Trọng tâm của nghiên cứu là sự kết hợp giữa ba chỉ báo kỹ 
 
 ## Dữ liệu và Kỹ thuật Tạo biến
 
-Cơ sở dữ liệu cho quá trình phân tích là tệp `vietnam_stocks_data.csv`, chứa dữ liệu giá lịch sử (Mở cửa, Cao nhất, Thấp nhất, Đóng cửa, Khối lượng) của các cổ phiếu trên thị trường Việt Nam. **Lưu ý:** Do kích thước lớn (>100MB), tệp dữ liệu này không được lưu trữ trực tiếp trên GitHub. Vui lòng tải xuống tệp dữ liệu từ [Google Drive](https://drive.google.com/file/d/109iabTLCsdOOIzVadVb3NEJ1bfXpimxn/view?usp=drive_link) hoặc liên hệ với tác giả để nhận tệp dữ liệu.
+Cơ sở dữ liệu cho quá trình phân tích là tệp `vietnam_stocks_data.csv`, chứa dữ liệu giá lịch sử (Mở cửa, Cao nhất, Thấp nhất, Đóng cửa, Khối lượng) của các cổ phiếu trên thị trường Việt Nam. **Lưu ý:** Do kích thước lớn (>100MB), tệp dữ liệu này không được lưu trữ trực tiếp trên GitHub. Vui lòng tải xuống tệp dữ liệu từ [Google Drive](https://drive.google.com/file/d/109iabTLCsdOOIzVadVb3NEJ1bfXpimxn/view?usp=drive_link).
 
 Để các mô hình học máy có thể nhận diện được các mẫu hình phức tạp của thị trường, một quá trình kỹ thuật tạo biến (feature engineering) đã được thực hiện một cách có hệ thống. Từ dữ liệu gốc, một tập hợp phong phú gồm 33 biến số mới đã được tạo ra. Các biến này được thiết kế để nắm bắt các khía cạnh khác nhau của hành vi giá và khối lượng, chẳng hạn như động lượng (RSI momentum), sự thay đổi xu hướng (PSAR trend change), sự đột biến về khối lượng (Volume Anomaly), và mức độ biến động (Volatility). Những biến số này cung cấp cho mô hình một cái nhìn đa chiều và sâu sắc hơn về trạng thái của từng cổ phiếu.
 
